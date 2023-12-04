@@ -6,6 +6,8 @@ import { Suspense } from 'react';
 import Loading from './loading';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
+import TopNav from './components/TopNav';
+import axios from 'axios';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,6 +24,8 @@ const roboto = Roboto({
   display: 'swap',
 });
 
+
+
 export default function RootLayout({
   children,
 }: {
@@ -30,9 +34,12 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${roboto.className} bg-white`}>
-        <NavBar />
-        <Suspense fallback={<Loading />}>{children}</Suspense>
-        <Footer />
+        <TopNav />
+        <div className='relative' style={{ top: '40px' }}>
+          <NavBar />
+          <Suspense fallback={<Loading />}>{children}</Suspense>
+          <Footer />
+        </div>
       </body>
     </html>
   );

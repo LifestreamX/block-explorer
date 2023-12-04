@@ -1,0 +1,47 @@
+
+The entire assignment needs to be pushed as a GitHub repo and shared with us
+
+● Try to document the frontend alongside the code
+● You don’t have any particular rule for structuring the frontend but the more sensible the
+structure is according to the task, the better
+● Try to make the commits as atomic as possible
+
+
+
+
+Assignment Description
+You are required to create a frontend for a block explorer similar to https://etherscan.io/.
+Although we don’t want you to add all the feature sets of etherscan, we expect the following
+things to be there:
+
+● Header with ether price and gas price (in terms of gwei)
+● Search bar where the user can search for a particular address, transaction hash or token
+● Getting details of a particular address which includes
+- ether balance of that address
+- list of normal transactions (using pagination)
+- list of erc-20 token transfers
+For tokens
+- total-supply of the token
+- balance of a particular account for the token
+
+Structure of the above features can be taken from the etherscan frontend and you can do a
+presentation according to it.
+There also needs to be a connect wallet option where a user can connect their wallet (not
+restricted to metamask) and on going the profile dashboard should be able to see their ether
+balance, list of normal trxs and list of erc-20 tokens. Note: you won’t be able to find any design
+2
+
+inspiration for this on etherscan website as this is a way for us to check how well you are able to
+create a customizable design system.
+
+
+
+Tech Stack
+We expect you to work with the following tech-stack
+- Next-JS
+- Tailwindcss
+- EthersJS
+- Web3Modal
+- Wagmi
+- Axios
+- Etherscan API (Use the free endpoints)
