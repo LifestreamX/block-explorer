@@ -6,7 +6,7 @@ import Search from './Search';
 const Hero = () => {
   return (
     <>
-      <section className='relative w-screen h-[300px]   '>
+      <section className='relative w-screen h-[350px]   '>
         <Image
           src={heroImg}
           alt='image background'
@@ -17,7 +17,7 @@ const Hero = () => {
         />
         <div className='text-white w-full h-full flex flex-col  items-center justify-center relative  right-14 bottom-14 m-14 lg:m-4'>
           <div className='w-1/2 '>
-            <h1 className='text-lg md:text-2xl lg:text-4xl font-bold top-4 relative my-2  '>
+            <h1 className='text-lg md:text-2xl lg:text-3xl font-bold top-6 relative my-2  '>
               The Ethereum Blockchain Explorer
             </h1>
             <Search />
